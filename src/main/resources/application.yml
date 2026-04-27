@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: automobile-catalog-service
+  elasticsearch:
+    uris: http://localhost:9200
+
+aws:
+  s3:
+    access-key: ${AWS_ACCESS_KEY}
+    secret-key: ${AWS_SECRET_KEY}
+    region: ap-south-1
+    bucket-name: autospares-images
