@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ecom-backend-autosparesgit push -u origin master
+    runtime: java
+    buildCommand: chmod +x mvnw && ./mvnw clean install -DskipTests
+    startCommand: java -jar target/*.jar
+    envVars:
+      - key: JAVA_VERSION
+        value: 17
